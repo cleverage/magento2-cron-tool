@@ -1,0 +1,30 @@
+{
+    "name": "cleverage/magento2-cron-tool",
+    "description": "Debug and dev tools for Magento2 cron",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Valentin Clavreul",
+            "email": "vclavreul@clever-age.com"
+        }
+    ],
+    "require": {
+        "php": "~5.6.0|~7.0.0",
+        "magento/framework": "*",
+        "magento/module-cron": "*"
+    },
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "CleverAge\\CronTool\\": ""
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ]
+}
